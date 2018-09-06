@@ -66,13 +66,13 @@ server.post('/get-plotmovie-details', (req, res) => {
 
             return res.json({
                 fulfillmentText: dataToSend,
-                source: 'get-Plotmovie-details'
+                source: 'get-plotmovie-details'
             });
         });
     }, (error) => {
         return res.json({
             fulfillmentText: 'Something went wrong!',
-            source: 'get-Plotmovie-details'
+            source: 'get-plotmovie-details'
         });
     });
 });
